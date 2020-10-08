@@ -1,4 +1,4 @@
-class: center, middle, vertigo
+class: center, middle, ircam
 
 # TimeSide
 
@@ -10,17 +10,19 @@ class: center, middle, vertigo
 Guillaume Pellerin - IRCAM<br>
 
 ---
-class: vertigo, tight
+class: ircam
 
-1. Intro (GP)
-1. Historique du projet TimeSide (GP)
-1. Framework (GP)
-1. Server (AG)
-1. Player v2 (MD)
-1. Perspectives
+#Outline
+
+- Intro (GP)
+- Historique du projet TimeSide (GP)
+- Framework (GP)
+- Server (AG)
+- Player v2 (MD)
+- Perspectives
 
 ---
-class: vertigo, tight
+class: ircam, tight
 
 #TimeSide
 
@@ -41,7 +43,7 @@ https://github.com/Parisson/TimeSide
 * *Deploy* and *scale* your own audio processing engine through any infrastructure
 
 ---
-class: vertigo
+class: ircam
 
 #TimeSide
 
@@ -59,7 +61,7 @@ https://github.com/Parisson/TimeSide
 - Audio web services
 
 ---
-class: vertigo
+class: ircam
 
 #TimeSide
 
@@ -74,7 +76,7 @@ class: vertigo
 - various related projects....
 
 ---
-class: vertigo
+class: ircam
 #Telemeta / TimeSide integration
 
 .pull-left[
@@ -95,7 +97,7 @@ https://github.com/Parisson/Telemeta
 
 
 ---
-class: vertigo
+class: ircam
 #Telemeta architecure
 
 .center-50[
@@ -103,7 +105,7 @@ class: vertigo
 ]
 
 ---
-class: vertigo
+class: ircam
 #TimeSide
 
 .pull-left-30[
@@ -117,7 +119,7 @@ class: vertigo
 ]
 
 ---
-class: vertigo
+class: ircam
 
 .pull-left-30[
 #TimeSide
@@ -170,7 +172,7 @@ class DummyAnalyzer(Analyzer):
 ]
 
 ---
-class: vertigo
+class: ircam
 #TimeSide
 
 .pull-left-30[
@@ -199,7 +201,7 @@ $ docker-compose run app python manage.py shell
 ]
 
 ---
-class: vertigo, tight
+class: ircam, tight
 #TimeSide
 
 ##Plugins
@@ -237,7 +239,7 @@ https://github.com/DIADEMS/timeside-diadems
 ]
 
 ---
-class: vertigo
+class: ircam
 #TimeSide
 
 .pull-left-30[
@@ -255,7 +257,7 @@ http://timeside-dev.telemeta.org/timeside/api/
 ]
 
 ---
-class: vertigo
+class: ircam
 #TimeSide
 
 .pull-left-30[
@@ -271,7 +273,7 @@ class: vertigo
 ]
 
 ---
-class: vertigo
+class: ircam
 
 .pull-left[
 #TimeSide
@@ -293,12 +295,12 @@ class: vertigo
 ]
 
 ---
-class: center, middle, vertigo
+class: center, middle, ircam
 
 # TimeSide projects
 
 ---
-class: vertigo, tight
+class: ircam, tight
 
 # DIADEMS project
 
@@ -320,7 +322,7 @@ https://www.irit.fr/recherches/SAMOVA/DIADEMS/en/welcome/
 - Parisson : Open development agency for audio science and arts (Paris, France)
 
 ---
-class: vertigo, tight
+class: ircam, tight
 
 # DIADEMS project
 
@@ -339,7 +341,7 @@ http://diadems.telemeta.org/archives/items/CNRSMH_I_2000_008_001_04/
 
 
 ---
-class: vertigo, tight
+class: ircam, tight
 
 #WASABI project
 
@@ -357,7 +359,7 @@ class: vertigo, tight
 - Parisson
 
 ---
-class: vertigo
+class: ircam
 
 #WASABI project
 
@@ -375,7 +377,7 @@ class: vertigo
 - plagiarism or influence detection
 
 ---
-class: vertigo
+class: ircam
 #WASABI
 
 ##Innovative user experience / use cases
@@ -392,7 +394,7 @@ class: vertigo
 - Interactive tutorials (music and sound engineer schools)
 
 ---
-class: vertigo
+class: ircam
 
 # Conclusion
 
@@ -409,7 +411,7 @@ class: vertigo
 - TRY IT! https://wasabi.i3s.unice.fr
 
 ---
-class: vertigo, tight
+class: ircam, tight
 
 #Other TimeSide related projects
 
@@ -430,7 +432,7 @@ class: vertigo, tight
     - http://kamoulox.telemeta.org/timeside/api/results/
 
 ---
-class: vertigo
+class: ircam
 
 #Future of TimeSide
 
@@ -445,7 +447,7 @@ class: vertigo
     - Digitization and media packaging services (VectraCom, VDN, Gecko)
 
 ---
-class: center, middle, vertigo
+class: center, middle, ircam
 
 # Thanks !
 <hr>
