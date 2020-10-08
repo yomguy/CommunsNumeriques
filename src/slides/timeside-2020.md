@@ -9,6 +9,15 @@ class: center, middle, vertigo
 
 Guillaume Pellerin - IRCAM<br>
 
+---
+class: vertigo, tight
+
+1. Intro (GP)
+1. Historique du projet TimeSide (GP)
+1. Framework (GP)
+1. Server (AG)
+1. Player v2 (MD)
+1. Perspectives
 
 ---
 class: vertigo, tight
