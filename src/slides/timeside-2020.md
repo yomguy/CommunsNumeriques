@@ -4,10 +4,11 @@ class: center, middle, ircam
 
 ##open audio processing framework for the web
 
-<hr>
 <img src="img/telemeta_logo_wh.png" height="100px" />
 
-Guillaume Pellerin - IRCAM<br>
+###Guillaume Pellerin, Antoine Grandry, Martin Desrumaux - IRCAM<br>
+
+### Séminaire STMS 14/10/2020 @ IRCAM
 
 ---
 class: ircam
