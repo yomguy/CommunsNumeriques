@@ -428,8 +428,8 @@ class: ircam, tight
   * several tools, views, models and serializers
   * REST API's schema on OpenAPI 3 specification and automatic Redoc generation
 * Upgrade Django to 2.2, Django REST Framework to 3.11, Celery to 4.4
-* Add :ref:`provider` as a core API component and as a REST API model
-* Add provider plugins :ref:`deezer-preview`, :ref:`deezer-complete` and :ref:`youtube`
+* Add `provider` as a core API component and as a REST API model
+* Add provider plugins `deezer-preview`, `deezer-complete` and `youtube`
 * Improve server unit testing
 * Add JWT authentication on REST API
 * A lot of bug fixes
@@ -443,7 +443,7 @@ class: ircam, middle, center
 
 ---
 class: ircam, tight
-# TimeSide server
+# timeside.server
 
 .pull-left[
 ## RESTful API built on TimeSide
@@ -466,7 +466,7 @@ https://sandbox.wasabi.telemeta.org/timeside/api/
 
 ---
 class: ircam, tight
-#TimeSide server
+#timeside.server
 
 .pull-left[
 ## RESTful API built on TimeSide
@@ -491,7 +491,7 @@ https://sandbox.wasabi.telemeta.org/timeside/api/
 
 ---
 class: ircam, tight
-# TimeSide server
+# timeside.server
 
 .pull-left[
 ## RESTful API built on TimeSide
@@ -499,15 +499,15 @@ https://sandbox.wasabi.telemeta.org/timeside/api/
 
 ## Models
 
-- Item: audio content and metadata (external id)
-- Provider: provide audio from a given plateform
-- Selection: list of items (corpus)
-- Processor: plugins with version and default parameters
-- Preset: processor and a set of parameters
-- Experience: list of presets forming a pipe
-- Task: an experience and a selection
-- Result: transcoded audio or numerical outputs (hdf5 file)
-- Annotation: label audio file on a given time or segment
+- `Item`: audio content and metadata (external id)
+- `Provider`: provide audio from a given plateform
+- `Selection`: list of items (corpus)
+- `Processor`: plugins with version and default parameters
+- `Preset`: processor and a set of parameters
+- `Experience`: list of presets forming a pipe
+- `Task`: an experience and a selection
+- `Result`: transcoded audio or numerical outputs (hdf5 file)
+- `Annotation`: label audio file on a given time or segment
 
 ]
 
@@ -515,9 +515,20 @@ https://sandbox.wasabi.telemeta.org/timeside/api/
 <img src="img/server_api.png" width="520">
 ]
 
+
 ---
 class: ircam
-#TimeSide server
+#timeside.server
+
+## RESTful API documentation
+https://sandbox.wasabi.telemeta.org/timeside/api/docs/
+
+<img src="img/server_doc.png" width="900">
+
+
+---
+class: ircam
+#timeside.server
 
 .pull-left[
 ##Example of TimeSide use in WASABI Project
@@ -533,15 +544,6 @@ class: ircam
 <img src="img/architecture_WASABI.png" width="450">
 <!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
 ]
-
----
-class: ircam
-#TimeSide server
-
-## RESTful API documentation
-https://sandbox.wasabi.telemeta.org/timeside/api/docs/
-
-<img src="img/server_doc.png" width="900">
 
 ---
 class: ircam, middle, center
