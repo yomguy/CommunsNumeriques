@@ -449,13 +449,14 @@ class: ircam, tight
 ## RESTful API built on TimeSide
 https://sandbox.wasabi.telemeta.org/timeside/api/
 
+### What's New on Server?
 - Based on Django REST Framework
 - Interoperability: allows other servers or frontends to interact with the TimeSide instance and its data
 - Relational PostgreSQL database in order to store music tracks and processing results
+- Models: essential fields and behaviors of stored data
 - JWT authentication
 - OpenAPI specification
 - SDK built on the API available in TypeScript
-- Models: essential fields and behaviors of stored data
 - queue-worker architecture enables to run tasks asynchronously
 
 ]
@@ -472,7 +473,7 @@ class: ircam, tight
 ## RESTful API built on TimeSide
 https://sandbox.wasabi.telemeta.org/timeside/api/
 
-## Use cases
+### Use cases
 - Upload audio tracks
 - Retrieve audio tracks from remote providers
 - Stream original or transcoded sources
@@ -497,7 +498,7 @@ class: ircam, tight
 ## RESTful API built on TimeSide
 https://sandbox.wasabi.telemeta.org/timeside/api/
 
-## Models
+### Models
 
 - `Item`: audio content and metadata (external id)
 - `Provider`: provide audio from a given plateform
@@ -531,11 +532,12 @@ class: ircam
 #timeside.server
 
 .pull-left[
-##Example of TimeSide use in WASABI Project
+## Examples of server use in WASABI Project
 
-- POC of a webservice delivering audio analysis
-- Link with another server: a large database of musical metadata
--
+### With server
+
+POC of a webservice delivering audio analysis to another remote server:
+a large database of musical metadata
 
 ]
 
@@ -544,6 +546,48 @@ class: ircam
 <img src="img/architecture_WASABI.png" width="450">
 <!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
 ]
+
+---
+class: ircam
+#timeside.server
+
+.pull-left[
+## Examples of server use in WASABI Project
+
+### With a frontend player
+
+
+
+]
+
+
+.pull-right[
+<img src="img/architecture_WASABI.png" width="450">
+<!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
+]
+
+
+---
+class: ircam
+#timeside.server
+
+.pull-left[
+## Examples of server use in WASABI Project
+
+### Import/export of a run on Deezer's infrastructure
+
+keep audio "at home"
+
+
+
+]
+
+
+.pull-right[
+<img src="img/architecture_WASABI.png" width="450">
+<!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
+]
+
 
 ---
 class: ircam, middle, center
