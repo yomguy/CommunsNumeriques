@@ -24,7 +24,7 @@ class: ircam
 
 
 ---
-class: ircam
+class: ircam, tight
 
 #TimeSide
 
@@ -87,7 +87,7 @@ class: ircam, tight
 
 ###Collaborative multimedia asset management system
 
-###MIR + Musicology + Archiving = MIRchiving
+MIR + Musicology + Archiving = MIRchiving
 
 ### Ecosystem
 
@@ -115,7 +115,7 @@ class: ircam, tight
 
 ##Web Audio and SemAntic in the Browser for Indexation
 
-- 42 months from 2016 Q4 to april 2020 Q2
+- 42 months from 2016 Q4 to april 2020 Q4
 - 750 k€ project granted by the french Research National Agency
 
 ## Consortium
@@ -166,9 +166,20 @@ targeting composers, musicologists, data journalists, music schools, music engin
 
 ---
 class: ircam
+# WASABI platform ([link](https://wasabi.i3s.unice.fr/))
+
+.pic-container[
+    <img src="img/wasabi.i3s.unice.fr-ledzep-1.png" width="100%">
+]
+
+
+---
+class: ircam
 # WASABI platform
 
-<center><img src="img/Architecture_WASABI.png" width="45%"></center>
+.pic-container[
+    <img src="img/Architecture_WASABI.png" width="80%">
+]
 
 
 ---
@@ -499,13 +510,15 @@ class: ircam
 
 #Perspectives
 
+## Audio processing SaaS
+
 - Fully autonomous audio analyzing Web service
 - More research projects implying the framework
 - Dual licencing:
     - open source community release of the core framework (AGPL)
     - proprietary (entreprise) release (SATT Lutech / Parisson / IRCAM) ?
 - Industrial use cases:
-    - MIRchiving (Telemeta, BNF, UNAM, archives internationales)
+    - MIRchiving (Telemeta, BNF, UNAM, UNESCO)
     - Metadata enhanced streaming services (Spotify, Deezer, SoundCloud, Netflix)
     - Digitization and media packaging services (VectraCom, VDM, Gecko)
 
@@ -514,9 +527,9 @@ class: center, middle, ircam
 
 # Thanks !
 
-##Guillaume Pellerin, IRCAM, France
+##Guillaume Pellerin, Antoine Grandry, Martin Desrumaux - IRCAM, France
 
-###guillaume.pellerin@ircam.fr / @yomguy
+###guillaume.pellerin@ircam.fr / @yomguy / @telemeta
 
 
 ---
@@ -529,12 +542,10 @@ class: ircam, tight
   - C4DM : Centre for Digital Music at Queen Mary University (London, UK)
   - CREM
   - Parisson
-
 - NYU / CREM - Arabic rythm analysis
   - NYU : New York University
   - CREM
   - Parisson
-
 - KAMoulox (ANR) - audio source separation
     - INRIA
     - Parisson
