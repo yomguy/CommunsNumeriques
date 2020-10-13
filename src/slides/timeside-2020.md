@@ -573,16 +573,14 @@ class: ircam
 .pull-left[
 #timeside.player
 
-##v2 (HTML5)
+##v2
 
-###Assumption : NO audio duration limit
+###Constraints
 
-###Constraint : user data persistence
-
-- zooming
-- packet streaming (audio & data)
-- multiple user annotations and analysis tracks
-- dynamic data rendering
+- Handling multiple hours audio files
+- Multiple user annotations and analysis tracks
+- Analysis rendered on the frontend
+- Zooming
 ]
 
 .pull-right[
