@@ -57,10 +57,10 @@ class: ircam
 - 2007 : [Telemeta](https://telemeta.org) developed for the sound archives of the CNRS / Musée de l'Homme
 - 2010 : TimeSide separation as a autonomous library and then a framework with a plugin oriented architecture
 - 2011 : Telemeta v1.0 released and http://archives.crem-cnrs.fr/
-- 2013 : DIADEMS project (ANR) : Processor API, external plugins
-- 2015 : TimeSide API and server prototype
-- 2015 : KAMoulox, DaCaRyh projects (ANR)
-- 2016 : WASABI (ANR), CREM-NYU-Parisson (Arabic rythm analysis)
+- 2013 : DIADEMS project (ANR) : external plugins
+- 2015 : TimeSide server and RESTFul API prototypes
+- 2015 : KAMoulox (ANR), DaCaRyh (Labex) projects
+- 2016 : WASABI (ANR), CREM-NYU-Parisson projects
 
 ---
 class: ircam
@@ -141,8 +141,9 @@ class: ircam
 ##Use cases
 
 - enhanced web music browsing
+- computational musicology
 - data journalism
-- music composing through big data (schools)
+- music learning through modular web interfaces (schools)
 - lyrics synchronization
 
 
@@ -310,7 +311,7 @@ class: ircam
 - plugin architecture
 - namespace
 - ~500 unit tests
-- docker packaged
+- docker packaged (Linux, OSX, Windows)
 ]
 
 .pull-right-70[
@@ -360,6 +361,7 @@ class: ircam
 - librosa (function oriented)
 - VampPyHost
 - Essentia bridge
+- ...
 ]
 
 .pull-right[
@@ -369,7 +371,6 @@ class: ircam
 - Monophony / Polyphony
 - Dissonance
 - Timbre Toolbox
-- etc... (experimental)
 
 https://github.com/DIADEMS/timeside-diadems
 
@@ -756,6 +757,8 @@ class: center, middle, ircam, inverse
 # Thank you and kudos to all contributors!
 
 <img src="img/wasabi_logo_darkbg.png" height="75px" />
+
+http://wasabihome.i3s.unice.fr/
 
 ###guillaume.pellerin@ircam.fr / @yomguy
 
