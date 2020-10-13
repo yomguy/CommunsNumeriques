@@ -442,11 +442,6 @@ class: ircam, middle, center
 
 
 ---
-class: center, middle, ircam
-#TimeSide server
-
-
----
 class: ircam, tight
 # TimeSide server
 
@@ -527,9 +522,9 @@ class: ircam
 .pull-left[
 ##Example of TimeSide use in WASABI Project
 
-- POC of a webservice delivering audio analysis 
+- POC of a webservice delivering audio analysis
 - Link with another server: a large database of musical metadata
-- 
+-
 
 ]
 
@@ -539,13 +534,6 @@ class: ircam
 <!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
 ]
 
-
----
-class: ircam, middle, center
-
-#TimeSide player
-
-
 ---
 class: ircam
 #TimeSide server
@@ -554,6 +542,12 @@ class: ircam
 https://sandbox.wasabi.telemeta.org/timeside/api/docs/
 
 <img src="img/server_doc.png" width="900">
+
+---
+class: ircam, middle, center
+
+#TimeSide player
+
 
 ---
 
