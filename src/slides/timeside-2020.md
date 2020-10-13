@@ -387,60 +387,13 @@ class: ircam, middle, center, inverse
 
 #TimeSide Server
 
-
----
-class: ircam, tight
-# timeside.server
-
-.pull-left[
-## RESTful API built on TimeSide
-https://sandbox.wasabi.telemeta.org/timeside/api/
-
-### Server design
-- Based on Django REST Framework (DRF)
-- Interoperability between other servers or frontends and TimeSide instance and its data
-- Object-relational database in order to store music tracks and processing results
-- Models: essential fields and behaviors of stored data
-- queue-worker architecture enables to run tasks asynchronously
-
-]
-
-.pull-right[
-<img src="img/server_api.png" width="520">
-]
-
----
-class: ircam, tight
-# timeside.server
-
-.pull-left[
-## RESTful API built on TimeSide
-https://sandbox.wasabi.telemeta.org/timeside/api/
-
-### What's new on server?
-- Add audio providers (Deezer, Youtube)
-- Switch from MySQL to PostgreSQL
-- Add a JWT authentication
-- Make the API follow the OpenAPI specification
-- Build a TypeScript SDK on the REST API
-- Add several tools, views, models and serializers
-- Improve server unit testing
-- Fix few bugs
-- Python, Django, DRF and Celery upgrades
-
-]
-
-.pull-right[
-<img src="img/server_api.png" width="520">
-]
-
 ---
 class: ircam, tight
 #timeside.server
 
 .pull-left[
 ## RESTful API built on TimeSide
-https://sandbox.wasabi.telemeta.org/timeside/api/
+👉 https://sandbox.wasabi.telemeta.org/timeside/api/
 
 ### Use cases
 - **Upload** audio tracks
@@ -465,7 +418,54 @@ class: ircam, tight
 
 .pull-left[
 ## RESTful API built on TimeSide
-https://sandbox.wasabi.telemeta.org/timeside/api/
+👉 https://sandbox.wasabi.telemeta.org/timeside/api/
+
+### Server design
+- Based on Django REST Framework (DRF)
+- **Interoperability** between other servers or frontends and TimeSide instance and its data
+- Object-relational **database** in order to store music tracks and processing results
+- **Models**: define essential fields and behaviors of stored data
+- **queue-worker architecture** enables to run tasks asynchronously
+
+]
+
+.pull-right[
+<img src="img/server_api.png" width="520">
+]
+
+---
+class: ircam, tight
+# timeside.server
+
+.pull-left[
+## RESTful API built on TimeSide
+👉 https://sandbox.wasabi.telemeta.org/timeside/api/
+
+### What's new on server?
+- Add audio providers (Deezer, Youtube)
+- Switch from MySQL to PostgreSQL
+- Add a JWT authentication
+- Make the API follow the OpenAPI specification
+- Build a TypeScript SDK on the REST API
+- Add several tools, views, models and serializers
+- Improve server unit testing
+- Fix few bugs
+- Python, Django, DRF and Celery upgrades
+
+]
+
+.pull-right[
+<img src="img/server_api.png" width="520">
+]
+
+
+---
+class: ircam, tight
+# timeside.server
+
+.pull-left[
+## RESTful API built on TimeSide
+👉 https://sandbox.wasabi.telemeta.org/timeside/api/
 
 ### Models
 
@@ -474,7 +474,7 @@ https://sandbox.wasabi.telemeta.org/timeside/api/
 - `Selection`: list of items (corpus)
 - `Processor`: plugins with version and default parameters
 - `Preset`: processor and a set of parameters
-- `Experience`: list of presets forming a pipe
+- `Experience`: list of presets forming a pipe (reproductible)
 - `Task`: an experience and a selection
 - `Result`: transcoded audio or numerical outputs (hdf5 file)
 - `Annotation`: label audio file on a given time or segment
@@ -491,7 +491,8 @@ class: ircam
 #timeside.server
 
 ## RESTful API documentation
-https://sandbox.wasabi.telemeta.org/timeside/api/docs/
+
+auto-generated thanks to ReDoc on top of OpenAPI 👉 https://sandbox.wasabi.telemeta.org/timeside/api/docs/
 
 <img src="img/server_doc.png" width="900">
 
@@ -501,18 +502,45 @@ class: ircam
 #timeside.server
 
 .pull-left[
-## Examples of server use in WASABI Project
+## Workflow examples in WASABI Project
+
+### With providers
+
+- Youtube
+    - based on `youtube-dl`
+    - must be adaptable to YouTube's changes
+- Deezer 30 seconds long preview
+    - consuming Deezer's API
+    - find another solution to full contents
+
+]
+
+
+.pull-right[
+<img src="img/architecture_WASABI-providers.png" width="450">
+<!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
+]
+
+---
+
+class: ircam
+#timeside.server
+
+.pull-left[
+## Workflow examples in WASABI Project
 
 ### With server
 
-POC of a webservice delivering audio analysis to another remote server:
-a large database of musical metadata
+POC of a webservice
+
+- delivers audio analysis to another remote server
+- enhance its musical metadata with results
 
 ]
 
 
 .pull-right[
-<img src="img/architecture_WASABI.png" width="450">
+<img src="img/architecture_WASABI-server.png" width="450">
 <!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
 ]
 
@@ -521,39 +549,45 @@ class: ircam
 #timeside.server
 
 .pull-left[
-## Examples of server use in WASABI Project
-
-### With a frontend player
-
-
-
-]
-
-
-.pull-right[
-<img src="img/architecture_WASABI.png" width="450">
-<!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
-]
-
-
----
-class: ircam
-#timeside.server
-
-.pull-left[
-## Examples of server use in WASABI Project
+## Workflow examples in WASABI Project
 
 ### Import/export of a run on Deezer's infrastructure
 
-keep audio "at home"
+POC of a sharing system of an audio analysis datasets
 
+- easy deployment thanks to docker
+- audio does not have to be shared
+
+]
+
+
+.pull-right[
+<img src="img/architecture_WASABI-deezer.png" width="450">
+<!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
+]
+
+
+---
+class: ircam
+#timeside.server
+
+.pull-left[
+## Workflow examples in WASABI Project
+
+### With a frontend player
+
+POC of a JavaScript app that consume the Rest API
+
+- serialize data as JSON or image
+- deliver analysis track (spectrogram, waveform)
+- deliver or get annotations on audio track
 
 
 ]
 
 
 .pull-right[
-<img src="img/architecture_WASABI.png" width="450">
+<img src="img/architecture_WASABI-frontend.png" width="450">
 <!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
 ]
 
