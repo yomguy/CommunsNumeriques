@@ -454,9 +454,6 @@ https://sandbox.wasabi.telemeta.org/timeside/api/
 - Interoperability between other servers or frontends and TimeSide instance and its data
 - Object-relational database in order to store music tracks and processing results
 - Models: essential fields and behaviors of stored data
-- JWT authentication
-- OpenAPI specification
-- SDK built on the API available in TypeScript
 - queue-worker architecture enables to run tasks asynchronously
 
 ]
