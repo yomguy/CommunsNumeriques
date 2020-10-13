@@ -349,7 +349,6 @@ $ git clone --recursive https://github.com/Parisson/TimeSide.git
 $ docker-compose up
 ```
 
-
 ]
 
 
@@ -634,7 +633,7 @@ class: ircam, tight
 
 
 .pull-right[
-```openapi
+```yaml
   /timeside/api/analysis/:
     get:
       operationId: listAnalysis
@@ -663,11 +662,7 @@ class: ircam, tight
 
 #timeside.player
 
-##Development
-
-🌐 Target
-- Firefox
-- Chrome
+##Environment
 
 🔧 Technologies
 - Vue (composition-api): DOM Manipulation, Data reactivity
@@ -675,6 +670,7 @@ class: ircam, tight
 - HTML5 Audio
 - Web Animations API
 - Resize Observer
+- Github Action for continuous test & deployment (npm, gh-page)
 
 🚀 Usage
 - Standalone app
@@ -683,8 +679,10 @@ class: ircam, tight
 	- Vue
 	- HTML
 
+🌐 Tested on Firefox & Chrome
+
 ---
-class: ircam, center
+class: ircam, middle, center
 
 # Demo time!
 
