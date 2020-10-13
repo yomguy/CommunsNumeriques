@@ -17,7 +17,7 @@ class: ircam
 
 - Intro (GP 2mn)
 - History (GP 5mn)
-- Framework (GP 10mn)
+- Core (GP 10mn)
 - Server (AG 10mn)
 - Player v2 (MD 10mn)
 - Perspectives (GP 3mn)
@@ -113,7 +113,7 @@ class: ircam, tight
 
 #WASABI project
 
-##Web Audio and SemAntic in the Browser for Indexation
+##Web Audio and SemAntics in the Browser for Indexation
 
 - 42 months from 2016 Q4 to april 2020 Q4
 - 750 k€ project granted by the french Research National Agency
@@ -134,35 +134,17 @@ class: ircam
 
 ##Objectives
 
-- Propose some new methodologies to index music in the web and audio context
+- Propose some new methodologies to index music in the web and audio contexts
 - Link semantics (linked metadata) + acoustics (MIR data) + machine learning
 - Develop and publish some open source web services through original APIs
 
 ##Use cases
 
-- augmented web music browsing
+- enhanced web music browsing
 - data journalism
-- music composing through big data
-- plagiarism or influence detection
-
----
-class: ircam
-
-#WASABI project
-
-##Innovative user experience / use cases
-
-targeting composers, musicologists, data journalists, music schools, music engineer schools, streaming services.
-
-###Application expected results (using WebAudio extensively)
-
-- A full web app to browse multidimensional data (I3S)
-- Collaborative Web tools for automatic, semi-automatic and manual audio indexing (Parisson, IRCAM)
-- Mixing table / multitrack player, chainable high-level audio effects, guitar amp simulators, interactive audio music browser (I3S)
-- Search engine driven by audio (midi input, audio extracts) (IRCAM, I3S)
-- improving production metadata access and recommandation (Deezer, Radio France)
-- Interactive tutorials (music and sound engineer schools)
-
+- music composing through big data (schools)
+- desambiguisation
+- lyrics synchronization
 
 ---
 class: ircam
@@ -171,7 +153,6 @@ class: ircam
 .pic-container[
     <img src="img/wasabi.i3s.unice.fr-ledzep-1.png" width="100%">
 ]
-
 
 ---
 class: ircam
@@ -185,7 +166,7 @@ class: ircam
 ---
 class: center, middle, ircam, inverse
 
-# TimeSide framework
+# TimeSide Core
 
 
 ---
@@ -228,6 +209,7 @@ https://github.com/Parisson/TimeSide
 - Collaborative annotation
 - Audio web services
 
+##License AGPL v2
 
 ---
 class: ircam
@@ -319,6 +301,8 @@ class: ircam
 - processing API
 - plugin architecture
 - namespace
+- docker packaged
+- ~500 unit tests
 ]
 
 .pull-right-70[
@@ -340,42 +324,13 @@ grapher.render(output='spectrogram.png')
 print('Level:', analyzer.results)
 Level: {'level.max': AnalyzerResult(...), 'level.rms': AnalyzerResult(...)}
 ```
-]
 
-
-
-
----
-class: ircam
-
-# timeside.core
-
-.pull-left-30[
-
-##Architecture
-
-- streaming oriented core engine
-- data persistence
-- processing API and namespace
-- docker packaged
-- fully scalable
-]
-
-.pull-right-70[
 ```bash
 $ git clone --recursive https://github.com/Parisson/TimeSide.git
 $ docker-compose up
 ```
 
-```python
-$ docker-compose run app python manage.py shell
->>> from timeside.models import Task
->>> tasks = Task.objects.all()
->>> for task in tasks:
->>>     task.run()
-```
 ]
-
 
 
 ---
@@ -436,9 +391,9 @@ class: ircam, tight
 * Add core, server and workers logging
 
 ---
-class: ircam, middle, center
+class: ircam, middle, center, inverse
 
-#TimeSide server
+#TimeSide Server
 
 
 ---
@@ -614,7 +569,7 @@ keep audio "at home"
 ---
 class: ircam, middle, center, inverse
 
-#TimeSide player
+#TimeSide Player
 
 
 ---
@@ -640,16 +595,14 @@ class: ircam
 .pull-left[
 #timeside.player
 
-##v2 (HTML5)
+##v2
 
-###Assumption : NO audio duration limit
+###Constraints
 
-###Constraint : user data persistence
-
-- zooming
-- packet streaming (audio & data)
-- multiple user annotations and analysis tracks
-- dynamic data rendering
+- Handling multiple hours audio files
+- Multiple user annotations and analysis tracks
+- Analysis rendered on the frontend
+- Zooming
 ]
 
 .pull-right[
@@ -681,11 +634,10 @@ class: ircam, tight
 
 
 .pull-right[
-```openapi
+```yaml
   /timeside/api/analysis/:
     get:
       operationId: listAnalysis
-      description: ''
       parameters: []
       responses:
         '200':
@@ -695,7 +647,6 @@ class: ircam, tight
                 type: array
                 items:
                   $ref: '#/components/schemas/Analysis'
-          description: ''
 ```
 ]
 
@@ -708,11 +659,9 @@ Opportunity: `openapi-generator` also supports Python, C/C++, Ruby, Go, Rust etc
 ---
 class: ircam, tight
 
-#timeside.player development
+#timeside.player
 
-🌐 Target
-- Firefox
-- Chrome
+##Environment
 
 🔧 Technologies
 - Vue (composition-api): DOM Manipulation, Data reactivity
@@ -720,6 +669,8 @@ class: ircam, tight
 - HTML5 Audio
 - Web Animations API
 - Resize Observer
+- Github Action for continuous test & deployment (npm, gh-page)
+- Github: https://github.com/ircam-web/timeside-player
 
 🚀 Usage
 - Standalone app
@@ -728,42 +679,43 @@ class: ircam, tight
 	- Vue
 	- HTML
 
+🌐 Tested on Firefox & Chrome
+
 ---
-class: ircam, center
+class: ircam, middle, center
 
 # Demo time!
 
 ---
-class: ircam
-
-# Current limitations
-
--	Processing tasks are limited to one machine
-	- Deployment on k8s cluster
-- Clients need to poll server to get update of task status
-	- Implementing Websocket, ServerEvent, Webhook
-
----
-class: ircam
+class: ircam, tight
 
 #Perspectives
 
-## Audio processing SaaS
+## Audio processing web service (SaaS)
 
-- Fully open source audio analyzing Web service
+###TODO
+
 - Clustering and orchestration (Kubernetes)
-- Dual licencing:
-    - open source community release of the core framework (AGPL)
-    - proprietary (entreprise) release (SATT Lutech / Parisson / IRCAM) ?
-- Industrial use cases:
-    - MIRchiving (Telemeta, BNF, UNAM, UNESCO)
-    - Metadata enhanced streaming services (Spotify, Deezer, SoundCloud, Netflix)
-    - Digitization and media packaging services (VectraCom, VDM, Gecko)
+- Implementing Websocket, ServerEvent or Webhook to avoid task status polling
+- Documentation, notebooks
+- More tests
+
+###Use cases
+
+- MIRchiving (Telemeta 2, CMS embedding, BNF, UNAM, UNESCO)
+- Metadata enhanced streaming services (Spotify, Deezer, SoundCloud, Netflix)
+- Digitization and media packaging services (VectraCom, VDM, Gecko)
+
+###Dual licencing
+
+- open source community release of the core framework (AGPL)
+- proprietary (entreprise) release (SATT Lutech / Parisson / IRCAM Amplify)
+
 
 ---
 class: center, middle, ircam, inverse
 
-# Thanks !
+# Merci !
 
 ##Guillaume Pellerin, Antoine Grandry, Martin Desrumaux - IRCAM, France
 
