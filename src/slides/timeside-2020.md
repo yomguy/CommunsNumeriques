@@ -505,11 +505,33 @@ https://sandbox.wasabi.telemeta.org/timeside/api/docs/
 
 
 ---
+--
 class: ircam
 #timeside.server
 
 .pull-left[
-## Examples of server use in WASABI Project
+## Workflow examples in WASABI Project
+
+### With providers
+
+- Youtube besed on `youtube-dl`
+- Deezer 30 seconds preview consuming Deezer's API
+
+]
+
+
+.pull-right[
+<img src="img/architecture_WASABI.png" width="450">
+<!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
+]
+
+---
+
+class: ircam
+#timeside.server
+
+.pull-left[
+## Workflow examples in WASABI Project
 
 ### With server
 
@@ -529,9 +551,11 @@ class: ircam
 #timeside.server
 
 .pull-left[
-## Examples of server use in WASABI Project
+## Workflow examples in WASABI Project
 
-### With a frontend player
+### Import/export of a run on Deezer's infrastructure
+
+keep audio "at home"
 
 
 
@@ -549,11 +573,9 @@ class: ircam
 #timeside.server
 
 .pull-left[
-## Examples of server use in WASABI Project
+## Workflow examples in WASABI Project
 
-### Import/export of a run on Deezer's infrastructure
-
-keep audio "at home"
+### With a frontend player
 
 
 
