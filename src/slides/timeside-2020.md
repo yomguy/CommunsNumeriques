@@ -4,7 +4,8 @@ class: center, middle, ircam, inverse
 
 ##Python audio processing framework and server made for the web
 
-###Guillaume Pellerin, Antoine Grandry, Martin Desrumaux - POW - IRCAM
+###Guillaume Pellerin, Antoine Grandry, Martin Desrumaux - POW (Web Team), IRCAM
+
 
 #### Séminaire STMS - 14/10/2020 - IRCAM
 
@@ -15,12 +16,12 @@ class: ircam
 
 #Outline
 
-- Intro (GP 2mn)
-- History (GP 5mn)
-- Core (GP 10mn)
-- Server (AG 10mn)
-- Player v2 (MD 10mn)
-- Perspectives (GP 3mn)
+- Intro (GP)
+- History (GP)
+- Core (GP)
+- Server (AG)
+- Player v2 (MD)
+- Perspectives (GP)
 
 
 ---
@@ -34,13 +35,13 @@ class: ircam, tight
 - more data sets, databases, formats, algorithm versions, open DSP libraries & communities
 - collaborative workflows, citizen sciences through the web
 
-## Problems, needs and usecases
+## Constraints and usecases
 
 - computer science need human data, digital humanities needs computers
-- difficult to port and scale some algorithms on streaming platforms (DSP at scale)
-- copyrighted data
 - reproducible research
 - sustainable digital archiving
+- difficult to port and scale some algorithms on production platforms (DSP at scale)
+- copyrighted data
 - open source and standards
 - format evolution and abstraction
 - duplicate and version everything
@@ -107,9 +108,8 @@ https://github.com/Parisson/Telemeta
 ]
 
 
-
 ---
-class: ircam, tight
+class: ircam
 
 #WASABI project
 
@@ -122,9 +122,9 @@ class: ircam, tight
 
 - INRIA (I3S)
 - IRCAM (APM, AnaSyn, POW)
+- Parisson
 - Deezer R&D
 - Radio France
-- Parisson
 
 
 ---
@@ -135,7 +135,7 @@ class: ircam
 ##Objectives
 
 - Propose some new methodologies to index music in the web and audio contexts
-- Link semantics (linked metadata) + acoustics (MIR data) + machine learning
+- Link semantics (linked metadata) + acoustics (MIR data)
 - Develop and publish some open source web services through original APIs
 
 ##Use cases
@@ -148,10 +148,18 @@ class: ircam
 
 ---
 class: ircam
-# WASABI platform
+# WASABI platform architecture
 
 .pic-container[
-    <img src="img/Architecture_WASABI.png" width="80%">
+    <img src="img/Architecture_WASABI.png" width="70%">
+]
+
+---
+class: ircam
+# WASABI platform ([link](https://wasabi.i3s.unice.fr/))
+
+.pic-container[
+    <img src="img/wasabi.i3s.unice.fr-ledzep-2.png" width="100%">
 ]
 
 
@@ -209,7 +217,7 @@ https://github.com/Parisson/TimeSide
 - Collaborative annotation
 - Audio web services
 
-##License AGPL v2
+##License: AGPL v2
 
 ---
 class: ircam
@@ -301,8 +309,8 @@ class: ircam
 - processing API
 - plugin architecture
 - namespace
-- docker packaged
 - ~500 unit tests
+- docker packaged
 ]
 
 .pull-right-70[
@@ -327,14 +335,17 @@ Level: {'level.max': AnalyzerResult(...), 'level.rms': AnalyzerResult(...)}
 
 ```bash
 $ git clone --recursive https://github.com/Parisson/TimeSide.git
+$ docker-compose run app python3 manage.py shell
 $ docker-compose up
 ```
+
+https://timeside.readthedocs.io/en/latest/index.html
 
 ]
 
 
 ---
-class: ircam, tight
+class: ircam
 
 # timeside.core
 
@@ -366,21 +377,22 @@ https://github.com/DIADEMS/timeside-diadems
 
 
 ---
-class: ircam, tight
+class: ircam
 
 # timeside.core
 
 ## What's new?
 
-0.9.4 > 1.0.0a (released yesterday!): 674 commits, 7 contributors
+###0.9.4 > 1.0.0a (released yesterday! 🎉 )
 
+* 674 commits, 7 contributors
 * Python 2.7 to 3.7
 * Drop GStreamer for Aubio as default decoder and encoder
 * Regroup all dependencies on pip requirements, drop conda
 * Add `Provider` object
 * Add Provider plugins `deezer-preview`, `deezer-complete` and `youtube`
 * Add loggers
-* Improve Docker packaging
+* Improve Docker packaging and image building
 
 ---
 class: ircam, middle, center, inverse
@@ -517,7 +529,7 @@ class: ircam
 
 
 .pull-right[
-<img src="img/architecture_WASABI-providers.png" width="450">
+<img src="img/Architecture_WASABI-providers.png" width="450">
 <!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
 ]
 
@@ -540,7 +552,7 @@ POC of a webservice
 
 
 .pull-right[
-<img src="img/architecture_WASABI-server.png" width="450">
+<img src="img/Architecture_WASABI-server.png" width="450">
 <!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
 ]
 
@@ -562,7 +574,7 @@ POC of a sharing system of an audio analysis datasets
 
 
 .pull-right[
-<img src="img/architecture_WASABI-deezer.png" width="450">
+<img src="img/Architecture_WASABI-deezer.png" width="450">
 <!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
 ]
 
@@ -587,7 +599,7 @@ POC of a JavaScript app that consume the Rest API
 
 
 .pull-right[
-<img src="img/architecture_WASABI-frontend.png" width="450">
+<img src="img/Architecture_WASABI-frontend.png" width="450">
 <!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
 ]
 
@@ -723,15 +735,14 @@ class: ircam, tight
 
 - Clustering and orchestration (Kubernetes)
 - Implementing Websocket, ServerEvent or Webhook to avoid task status polling
-- Split repositories : core, server, player
-- Documentation, notebooks
-- More tests
+- Split repositories : core / server / player
+- More documentation, notebooks and tests
 
 ###Use cases
 
-- MIRchiving (Telemeta 2, CMS embedding, BNF, UNAM, UNESCO)
-- Metadata enhanced streaming services (Spotify, Deezer, SoundCloud, Netflix)
+- MIRchiving (Telemeta 2, CMS embedding, MNHN, UNAM, UNESCO)
 - Digitization and media packaging services (VectraCom, VDM, Gecko)
+- Metadata enhanced streaming services (Spotify, Deezer, SoundCloud, Netflix)
 
 ###Dual licencing
 
@@ -742,32 +753,9 @@ class: ircam, tight
 ---
 class: center, middle, ircam, inverse
 
-# Merci !
-
-##Guillaume Pellerin, Antoine Grandry, Martin Desrumaux - IRCAM, France
+# Thank you and kudos to all contributors!
 
 <img src="img/wasabi_logo_darkbg.png" height="75px" />
 
-###guillaume.pellerin@ircam.fr / @yomguy / @telemeta
-
-
----
-class: ircam, tight
-
-#Other TimeSide related projects
-
-- DIADEMS
-- DaCaRyh (Labex) - Steel band history
-  - C4DM : Centre for Digital Music at Queen Mary University (London, UK)
-  - CREM
-  - Parisson
-- NYU / CREM - Arabic rythm analysis
-  - NYU : New York University
-  - CREM
-  - Parisson
-- KAMoulox (ANR) - audio source separation
-    - INRIA
-    - Parisson
-    - http://kamoulox.telemeta.org/
-    - http://kamoulox.telemeta.org/timeside/api/results/
+###guillaume.pellerin@ircam.fr / @yomguy
 
