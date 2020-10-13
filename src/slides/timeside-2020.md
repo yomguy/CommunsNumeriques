@@ -113,7 +113,7 @@ class: ircam, tight
 
 #WASABI project
 
-##Web Audio and SemAntic in the Browser for Indexation
+##Web Audio and SemAntics in the Browser for Indexation
 
 - 42 months from 2016 Q4 to april 2020 Q4
 - 750 k€ project granted by the french Research National Agency
@@ -134,35 +134,17 @@ class: ircam
 
 ##Objectives
 
-- Propose some new methodologies to index music in the web and audio context
+- Propose some new methodologies to index music in the web and audio contexts
 - Link semantics (linked metadata) + acoustics (MIR data) + machine learning
 - Develop and publish some open source web services through original APIs
 
 ##Use cases
 
-- augmented web music browsing
+- enhanced web music browsing
 - data journalism
-- music composing through big data
-- plagiarism or influence detection
-
----
-class: ircam
-
-#WASABI project
-
-##Innovative user experience / use cases
-
-targeting composers, musicologists, data journalists, music schools, music engineer schools, streaming services.
-
-###Application expected results (using WebAudio extensively)
-
-- A full web app to browse multidimensional data (I3S)
-- Collaborative Web tools for automatic, semi-automatic and manual audio indexing (Parisson, IRCAM)
-- Mixing table / multitrack player, chainable high-level audio effects, guitar amp simulators, interactive audio music browser (I3S)
-- Search engine driven by audio (midi input, audio extracts) (IRCAM, I3S)
-- improving production metadata access and recommandation (Deezer, Radio France)
-- Interactive tutorials (music and sound engineer schools)
-
+- music composing through big data (schools)
+- desambiguisation
+- lyrics synchronization
 
 ---
 class: ircam
@@ -171,7 +153,6 @@ class: ircam
 .pic-container[
     <img src="img/wasabi.i3s.unice.fr-ledzep-1.png" width="100%">
 ]
-
 
 ---
 class: ircam
@@ -185,7 +166,7 @@ class: ircam
 ---
 class: center, middle, ircam, inverse
 
-# TimeSide core
+# TimeSide Core
 
 
 ---
@@ -412,7 +393,7 @@ class: ircam, tight
 ---
 class: ircam, middle, center, inverse
 
-#TimeSide server
+#TimeSide Server
 
 
 ---
@@ -566,7 +547,7 @@ keep audio "at home"
 ---
 class: ircam, middle, center, inverse
 
-#TimeSide player
+#TimeSide Player
 
 
 ---
@@ -691,7 +672,7 @@ class: ircam, tight
 
 #Perspectives
 
-## Audio processing SaaS
+## Audio processing web service (SaaS)
 
 ###TODO
 
