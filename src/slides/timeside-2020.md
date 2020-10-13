@@ -596,7 +596,7 @@ class: ircam, tight
 
 #timeside.player
 
-##API SDK
+##API SDK (client library)
 
 .pull-left[
 - Timeside API: 75 routes
@@ -637,30 +637,35 @@ class: ircam, tight
 - SDK: https://github.com/Ircam-Web/timeside-sdk-js
 - Node: https://github.com/Ircam-Web/timeside-scripts
 
-openapi-generator supports Python, C/C++, Ruby, Go, Rust etc...
+Opportunity: `openapi-generator` also supports Python, C/C++, Ruby, Go, Rust etc...
 
 ---
-class: ircam
+class: ircam, tight
 
 #timeside.player development
 
-- DOM Manipulation: Vue (composition-api)
-- Waveform / Analysis: D3 rendering using SVG
-- Annotation: DOM
+🌐 Target
+- Firefox
+- Chrome
+
+🔧 Technologies
+- Vue (composition-api): DOM Manipulation, Data reactivity
+- D3 (SVG): Render waveform / Analysis
+- HTML5 Audio
+- Web Animations API
+- Resize Observer
+
+🚀 Usage
+- Standalone app
+- Web library
+	- React
+	- Vue
+	- HTML
 
 ---
-class: ircam
+class: ircam, center
 
-# Player demo
-
----
-class: ircam
-
-# Usage as web library
-
-- React
-- Vue
-- HTML
+# Demo time!
 
 ---
 class: ircam
