@@ -637,7 +637,6 @@ class: ircam, tight
   /timeside/api/analysis/:
     get:
       operationId: listAnalysis
-      description: ''
       parameters: []
       responses:
         '200':
@@ -647,7 +646,6 @@ class: ircam, tight
                 type: array
                 items:
                   $ref: '#/components/schemas/Analysis'
-          description: ''
 ```
 ]
 
@@ -671,6 +669,7 @@ class: ircam, tight
 - Web Animations API
 - Resize Observer
 - Github Action for continuous test & deployment (npm, gh-page)
+- Github: https://github.com/ircam-web/timeside-player
 
 🚀 Usage
 - Standalone app
