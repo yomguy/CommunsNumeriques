@@ -401,7 +401,7 @@ class: ircam, tight
 
 .pull-left[
 ## RESTful API built on TimeSide
-https://sandbox.wasabi.telemeta.org/timeside/api/
+👉 https://sandbox.wasabi.telemeta.org/timeside/api/
 
 ### Use cases
 - **Upload** audio tracks
@@ -426,7 +426,7 @@ class: ircam, tight
 
 .pull-left[
 ## RESTful API built on TimeSide
-https://sandbox.wasabi.telemeta.org/timeside/api/
+👉 https://sandbox.wasabi.telemeta.org/timeside/api/
 
 ### Server design
 - Based on Django REST Framework (DRF)
@@ -447,7 +447,7 @@ class: ircam, tight
 
 .pull-left[
 ## RESTful API built on TimeSide
-https://sandbox.wasabi.telemeta.org/timeside/api/
+👉 https://sandbox.wasabi.telemeta.org/timeside/api/
 
 ### What's new on server?
 - Add audio providers (Deezer, Youtube)
@@ -473,7 +473,7 @@ class: ircam, tight
 
 .pull-left[
 ## RESTful API built on TimeSide
-https://sandbox.wasabi.telemeta.org/timeside/api/
+👉 https://sandbox.wasabi.telemeta.org/timeside/api/
 
 ### Models
 
@@ -499,7 +499,8 @@ class: ircam
 #timeside.server
 
 ## RESTful API documentation
-https://sandbox.wasabi.telemeta.org/timeside/api/docs/
+
+auto-generated thanks to ReDoc on top of OpenAPI 👉 https://sandbox.wasabi.telemeta.org/timeside/api/docs/
 
 <img src="img/server_doc.png" width="900">
 
