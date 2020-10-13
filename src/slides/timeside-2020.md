@@ -175,7 +175,7 @@ class: ircam
 ---
 class: center, middle, ircam, inverse
 
-# TimeSide Core
+# timeside.core
 
 
 ---
@@ -398,7 +398,7 @@ class: ircam
 ---
 class: ircam, middle, center, inverse
 
-#TimeSide Server
+#timeside.server
 
 ---
 class: ircam, tight
@@ -608,7 +608,7 @@ POC of a JavaScript app that consume the Rest API
 ---
 class: ircam, middle, center, inverse
 
-#TimeSide Player
+#timeside.player
 
 
 ---
