@@ -514,14 +514,18 @@ class: ircam
 
 ### With providers
 
-- Youtube besed on `youtube-dl`
-- Deezer 30 seconds preview consuming Deezer's API
+- Youtube
+    - based on `youtube-dl`
+    - must be adaptable to YouTube's changes
+- Deezer 30 seconds long preview
+    - consuming Deezer's API
+    - find another solution to full contents
 
 ]
 
 
 .pull-right[
-<img src="img/architecture_WASABI.png" width="450">
+<img src="img/architecture_WASABI-providers.png" width="450">
 <!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
 ]
 
@@ -535,14 +539,16 @@ class: ircam
 
 ### With server
 
-POC of a webservice delivering audio analysis to another remote server:
-a large database of musical metadata
+POC of a webservice
+
+- delivers audio analysis to another remote server
+- enhance its musical metadata with results
 
 ]
 
 
 .pull-right[
-<img src="img/architecture_WASABI.png" width="450">
+<img src="img/architecture_WASABI-server.png" width="450">
 <!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
 ]
 
@@ -555,15 +561,16 @@ class: ircam
 
 ### Import/export of a run on Deezer's infrastructure
 
-keep audio "at home"
+POC of a sharing system of an audio analysis datasets
 
-
+- easy deployment thanks to docker
+- audio does not have to be shared
 
 ]
 
 
 .pull-right[
-<img src="img/architecture_WASABI.png" width="450">
+<img src="img/architecture_WASABI-deezer.png" width="450">
 <!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
 ]
 
@@ -577,13 +584,18 @@ class: ircam
 
 ### With a frontend player
 
+POC of a JavaScript app that consume the Rest API
+
+- serialize data as JSON or image
+- deliver analysis track (spectrogram, waveform)
+- deliver or get annotations on audio track
 
 
 ]
 
 
 .pull-right[
-<img src="img/architecture_WASABI.png" width="450">
+<img src="img/architecture_WASABI-frontend.png" width="450">
 <!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
 ]
 
