@@ -590,7 +590,7 @@ keep audio "at home"
 
 
 ---
-class: ircam, middle, center
+class: ircam, middle, center, inverse
 
 #TimeSide player
 
@@ -598,10 +598,10 @@ class: ircam, middle, center
 ---
 
 class: ircam
-#TimeSide
+#timeside.player
 
 .pull-left-30[
-##Player (v1, SoundManager2)
+## v1 (SoundManager2)
 
 - on demand processing
 - simple marker annotation
@@ -616,9 +616,9 @@ class: ircam
 class: ircam
 
 .pull-left[
-#TimeSide
+#timeside.player
 
-##Player v2 (Web Audio, prototype)
+##v2 (HTML5)
 
 ###Assumption : NO audio duration limit
 
@@ -634,6 +634,92 @@ class: ircam
 .right[![image](img/ui-telemeta-grand-2_1.png)]
 ]
 
+
+---
+class: ircam, tight
+
+#timeside.player
+
+##API SDK (client library)
+
+.pull-left[
+- Timeside API: 75 routes
+- openapi-generator
+	- Typescript
+	- Fetch
+	- OpenAPI v3 Schemas
+- Improve schema support on DRF (PR)
+	- Components
+	- Customize default names
+- Glue code
+	- Authentication
+	- Initialization on Browser / Node
+- Documentation
+]
+
+
+.pull-right[
+```openapi
+  /timeside/api/analysis/:
+    get:
+      operationId: listAnalysis
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Analysis'
+          description: ''
+```
+]
+
+
+- SDK: https://github.com/Ircam-Web/timeside-sdk-js
+- Node: https://github.com/Ircam-Web/timeside-scripts
+
+Opportunity: `openapi-generator` also supports Python, C/C++, Ruby, Go, Rust etc...
+
+---
+class: ircam, tight
+
+#timeside.player development
+
+🌐 Target
+- Firefox
+- Chrome
+
+🔧 Technologies
+- Vue (composition-api): DOM Manipulation, Data reactivity
+- D3 (SVG): Render waveform / Analysis
+- HTML5 Audio
+- Web Animations API
+- Resize Observer
+
+🚀 Usage
+- Standalone app
+- Web library
+	- React
+	- Vue
+	- HTML
+
+---
+class: ircam, center
+
+# Demo time!
+
+---
+class: ircam
+
+# Current limitations
+
+-	Processing tasks are limited to one machine
+	- Deployment on k8s cluster
+- Clients need to poll server to get update of task status
+	- Implementing Websocket, ServerEvent, Webhook
 
 ---
 class: ircam
