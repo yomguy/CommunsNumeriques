@@ -321,6 +321,7 @@ class: ircam
 - plugin architecture
 - namespace
 - docker packaged
+- ~500 unit tests
 ]
 
 .pull-right-70[
@@ -660,7 +661,9 @@ Opportunity: `openapi-generator` also supports Python, C/C++, Ruby, Go, Rust etc
 ---
 class: ircam, tight
 
-#timeside.player development
+#timeside.player
+
+##Development
 
 🌐 Target
 - Firefox
@@ -686,30 +689,35 @@ class: ircam, center
 # Demo time!
 
 ---
-class: ircam
+class: ircam, tight
 
 #Perspectives
 
 ## Audio processing SaaS
 
 ###TODO
+
 - Clustering and orchestration (Kubernetes)
 - Implementing Websocket, ServerEvent or Webhook to avoid task status polling
+- Documentation, notebooks
+- More tests
 
+###Use cases
 
-###Dual licencing:
-    - open source community release of the core framework (AGPL)
-    - proprietary (entreprise) release (SATT Lutech / Parisson / IRCAM) ?
+- MIRchiving (Telemeta 2, CMS embedding, BNF, UNAM, UNESCO)
+- Metadata enhanced streaming services (Spotify, Deezer, SoundCloud, Netflix)
+- Digitization and media packaging services (VectraCom, VDM, Gecko)
 
-###Industrial use cases:
-    - MIRchiving (Telemeta, BNF, UNAM, UNESCO)
-    - Metadata enhanced streaming services (Spotify, Deezer, SoundCloud, Netflix)
-    - Digitization and media packaging services (VectraCom, VDM, Gecko)
+###Dual licencing
+
+- open source community release of the core framework (AGPL)
+- proprietary (entreprise) release (SATT Lutech / Parisson / IRCAM Amplify)
+
 
 ---
 class: center, middle, ircam, inverse
 
-# Thanks !
+# Merci !
 
 ##Guillaume Pellerin, Antoine Grandry, Martin Desrumaux - IRCAM, France
 
