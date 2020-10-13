@@ -396,15 +396,37 @@ class: ircam, tight
 ## RESTful API built on TimeSide
 https://sandbox.wasabi.telemeta.org/timeside/api/
 
-### What's New on Server?
-- Based on Django REST Framework
-- Interoperability: allows other servers or frontends to interact with the TimeSide instance and its data
-- Relational PostgreSQL database in order to store music tracks and processing results
+### Server design
+- Based on Django REST Framework (DRF)
+- Interoperability between other servers or frontends and TimeSide instance and its data
+- Object-relational database in order to store music tracks and processing results
 - Models: essential fields and behaviors of stored data
-- JWT authentication
-- OpenAPI specification
-- SDK built on the API available in TypeScript
 - queue-worker architecture enables to run tasks asynchronously
+
+]
+
+.pull-right[
+<img src="img/server_api.png" width="520">
+]
+
+---
+class: ircam, tight
+# timeside.server
+
+.pull-left[
+## RESTful API built on TimeSide
+https://sandbox.wasabi.telemeta.org/timeside/api/
+
+### What's new on server?
+- Add audio providers (Deezer, Youtube)
+- Switch from MySQL to PostgreSQL
+- Add a JWT authentication
+- Make the API follow the OpenAPI specification
+- Build a TypeScript SDK on the REST API
+- Add several tools, views, models and serializers
+- Improve server unit testing
+- Fix few bugs
+- Python, Django, DRF and Celery upgrades
 
 ]
 
@@ -421,16 +443,16 @@ class: ircam, tight
 https://sandbox.wasabi.telemeta.org/timeside/api/
 
 ### Use cases
-- Upload audio tracks
-- Retrieve audio tracks from remote providers
-- Stream original or transcoded sources
-- Run on-demand analysis
-- Customize processors parameters
-- Collect track's annotation to build audio corpora
-- Deliver and share several types of results:
+- **Upload** audio tracks
+- **Retrieve** audio tracks from remote providers
+- **Stream** original or transcoded sources
+- **Run** on-demand analysis
+- **Customize** processors parameters
+- **Collect** track's annotation to build audio corpora
+- **Deliver** and share several types of results:
     - transcoded audio
     - serialized analysis as JSON or image
-- Export/import an audio analysis dataset
+- **Export/import** an audio analysis dataset
 ]
 
 .pull-right[
