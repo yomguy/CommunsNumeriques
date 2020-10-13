@@ -143,16 +143,8 @@ class: ircam
 - enhanced web music browsing
 - data journalism
 - music composing through big data (schools)
-- desambiguisation
 - lyrics synchronization
 
----
-class: ircam
-# WASABI platform ([link](https://wasabi.i3s.unice.fr/))
-
-.pic-container[
-    <img src="img/wasabi.i3s.unice.fr-ledzep-1.png" width="100%">
-]
 
 ---
 class: ircam
@@ -162,6 +154,14 @@ class: ircam
     <img src="img/Architecture_WASABI.png" width="80%">
 ]
 
+
+---
+class: ircam
+# WASABI platform ([link](https://wasabi.i3s.unice.fr/))
+
+.pic-container[
+    <img src="img/wasabi.i3s.unice.fr-ledzep-1.png" width="100%">
+]
 
 ---
 class: center, middle, ircam, inverse
