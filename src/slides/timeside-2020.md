@@ -395,6 +395,30 @@ class: ircam, middle, center, inverse
 
 #TimeSide Server
 
+---
+class: ircam, tight
+#timeside.server
+
+.pull-left[
+## RESTful API built on TimeSide
+https://sandbox.wasabi.telemeta.org/timeside/api/
+
+### Use cases
+- **Upload** audio tracks
+- **Retrieve** audio tracks from remote providers
+- **Stream** original or transcoded sources
+- **Run** on-demand analysis
+- **Customize** processors parameters
+- **Collect** track's annotation to build audio corpora
+- **Deliver** and share several types of results:
+    - transcoded audio
+    - serialized analysis as JSON or image
+- **Export/import** an audio analysis dataset
+]
+
+.pull-right[
+<img src="img/server_api.png" width="520">
+]
 
 ---
 class: ircam, tight
@@ -442,30 +466,6 @@ https://sandbox.wasabi.telemeta.org/timeside/api/
 <img src="img/server_api.png" width="520">
 ]
 
----
-class: ircam, tight
-#timeside.server
-
-.pull-left[
-## RESTful API built on TimeSide
-https://sandbox.wasabi.telemeta.org/timeside/api/
-
-### Use cases
-- **Upload** audio tracks
-- **Retrieve** audio tracks from remote providers
-- **Stream** original or transcoded sources
-- **Run** on-demand analysis
-- **Customize** processors parameters
-- **Collect** track's annotation to build audio corpora
-- **Deliver** and share several types of results:
-    - transcoded audio
-    - serialized analysis as JSON or image
-- **Export/import** an audio analysis dataset
-]
-
-.pull-right[
-<img src="img/server_api.png" width="520">
-]
 
 ---
 class: ircam, tight
@@ -482,7 +482,7 @@ https://sandbox.wasabi.telemeta.org/timeside/api/
 - `Selection`: list of items (corpus)
 - `Processor`: plugins with version and default parameters
 - `Preset`: processor and a set of parameters
-- `Experience`: list of presets forming a pipe
+- `Experience`: list of presets forming a pipe (reproductible)
 - `Task`: an experience and a selection
 - `Result`: transcoded audio or numerical outputs (hdf5 file)
 - `Annotation`: label audio file on a given time or segment
