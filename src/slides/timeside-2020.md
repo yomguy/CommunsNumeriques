@@ -512,8 +512,8 @@ class: ircam
 
 ## Audio processing SaaS
 
-- Fully autonomous audio analyzing Web service
-- More research projects implying the framework
+- Fully open source audio analyzing Web service
+- Clustering and orchestration (Kubernetes)
 - Dual licencing:
     - open source community release of the core framework (AGPL)
     - proprietary (entreprise) release (SATT Lutech / Parisson / IRCAM) ?
@@ -523,11 +523,13 @@ class: ircam
     - Digitization and media packaging services (VectraCom, VDM, Gecko)
 
 ---
-class: center, middle, ircam
+class: center, middle, ircam, inverse
 
 # Thanks !
 
 ##Guillaume Pellerin, Antoine Grandry, Martin Desrumaux - IRCAM, France
+
+<img src="img/wasabi_logo_darkbg.png" height="75px" />
 
 ###guillaume.pellerin@ircam.fr / @yomguy / @telemeta
 
