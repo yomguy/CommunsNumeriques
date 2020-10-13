@@ -12,16 +12,16 @@ class: center, middle, ircam, inverse
 <img src="img/POW_MB.png" height="100px" />
 
 ---
-class: ircam
+class: ircam, large-list
 
 #Outline
 
-- Intro (GP)
-- History (GP)
-- Core (GP)
-- Server (AG)
-- Player v2 (MD)
-- Perspectives (GP)
+- Introduction
+- History
+- Core
+- Server
+- Player
+- Perspectives
 
 
 ---
@@ -700,7 +700,7 @@ class: ircam, tight
 
 #timeside.player
 
-##Environment
+##Player
 
 🔧 Technologies
 - Vue (composition-api): DOM Manipulation, Data reactivity
