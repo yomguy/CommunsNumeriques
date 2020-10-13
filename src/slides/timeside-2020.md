@@ -506,7 +506,6 @@ auto-generated thanks to ReDoc on top of OpenAPI 👉 https://sandbox.wasabi.tel
 
 
 ---
---
 class: ircam
 #timeside.server
 
