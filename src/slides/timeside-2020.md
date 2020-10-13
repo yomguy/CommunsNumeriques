@@ -546,7 +546,7 @@ class: ircam
 ]
 
 ---
-class: ircam, middle, center
+class: ircam, middle, center, inverse
 
 #TimeSide player
 
@@ -554,10 +554,10 @@ class: ircam, middle, center
 ---
 
 class: ircam
-#TimeSide
+#timeside.player
 
 .pull-left-30[
-##Player (v1, SoundManager2)
+## v1 (SoundManager2)
 
 - on demand processing
 - simple marker annotation
@@ -572,9 +572,9 @@ class: ircam
 class: ircam
 
 .pull-left[
-#TimeSide
+#timeside.player
 
-##Player v2 (Web Audio, prototype)
+##v2 (HTML5)
 
 ###Assumption : NO audio duration limit
 
@@ -592,9 +592,11 @@ class: ircam
 
 
 ---
-class: ircam
+class: ircam, tight
 
-# API SDK
+#timeside.player
+
+##API SDK
 
 .pull-left[
 - Timeside API: 75 routes
@@ -640,12 +642,12 @@ openapi-generator supports Python, C/C++, Ruby, Go, Rust etc...
 ---
 class: ircam
 
-# Player developement
+#timeside.player development
 
 - DOM Manipulation: Vue (composition-api)
 - Waveform / Analysis: D3 rendering using SVG
 - Annotation: DOM
-	
+
 ---
 class: ircam
 
