@@ -594,6 +594,85 @@ class: ircam
 ---
 class: ircam
 
+# API SDK
+
+.pull-left[
+- Timeside API: 75 routes
+- openapi-generator
+	- Typescript
+	- Fetch
+	- OpenAPI v3 Schemas
+- Improve schema support on DRF (PR)
+	- Components
+	- Customize default names
+- Glue code
+	- Authentication
+	- Initialization on Browser / Node
+- Documentation
+]
+
+
+.pull-right[
+```openapi
+  /timeside/api/analysis/:
+    get:
+      operationId: listAnalysis
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Analysis'
+          description: ''
+```
+]
+
+
+- SDK: https://github.com/Ircam-Web/timeside-sdk-js
+- Node: https://github.com/Ircam-Web/timeside-scripts
+
+openapi-generator supports Python, C/C++, Ruby, Go, Rust etc...
+
+---
+class: ircam
+
+# Player developement
+
+- DOM Manipulation: Vue (composition-api)
+- Waveform / Analysis: D3 rendering using SVG
+- Annotation: DOM
+	
+---
+class: ircam
+
+# Player demo
+
+---
+class: ircam
+
+# Usage as web library
+
+- React
+- Vue
+- HTML
+
+---
+class: ircam
+
+# Current limitations
+
+-	Processing tasks are limited to one machine
+	- Deployment on k8s cluster
+- Clients need to poll server to get update of task status
+	- Implementing Websocket, ServerEvent, Webhook
+
+---
+class: ircam
+
 #Perspectives
 
 ## Audio processing SaaS
