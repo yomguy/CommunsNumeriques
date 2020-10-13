@@ -376,19 +376,11 @@ class: ircam, tight
 
 * Python 2.7 to 3.7
 * Drop GStreamer for Aubio as default decoder and encoder
-* Add core and server processors' versioning and server process' run time
 * Regroup all dependencies on pip requirements, drop conda
-* Server refactoring:
-  * audio process run on items (REST API track's model)
-  * several tools, views, models and serializers
-  * REST API's schema on OpenAPI 3 specification and automatic Redoc generation
-* Upgrade Django to 2.2, Django REST Framework to 3.11, Celery to 4.4
-* Add `provider` as a core API component and as a REST API model
-* Add provider plugins `deezer-preview`, `deezer-complete` and `youtube`
-* Improve server unit testing
-* Add JWT authentication on REST API
-* A lot of bug fixes
-* Add core, server and workers logging
+* Add `Provider` object
+* Add Provider plugins `deezer-preview`, `deezer-complete` and `youtube`
+* Add loggers
+* Improve Docker packaging
 
 ---
 class: ircam, middle, center, inverse
@@ -677,6 +669,7 @@ class: ircam, tight
 
 - Clustering and orchestration (Kubernetes)
 - Implementing Websocket, ServerEvent or Webhook to avoid task status polling
+- Split repositories : core, server, player
 - Documentation, notebooks
 - More tests
 
