@@ -474,16 +474,16 @@ class: ircam, tight
 https://sandbox.wasabi.telemeta.org/timeside/api/
 
 ### Use cases
-- Upload audio tracks
-- Retrieve audio tracks from remote providers
-- Stream original or transcoded sources
-- Run on-demand analysis
-- Customize processors parameters
-- Collect track's annotation to build audio corpora
-- Deliver and share several types of results:
+- **Upload** audio tracks
+- **Retrieve** audio tracks from remote providers
+- **Stream** original or transcoded sources
+- **Run** on-demand analysis
+- **Customize** processors parameters
+- **Collect** track's annotation to build audio corpora
+- **Deliver** and share several types of results:
     - transcoded audio
     - serialized analysis as JSON or image
-- Export/import an audio analysis dataset
+- **Export/import** an audio analysis dataset
 ]
 
 .pull-right[
