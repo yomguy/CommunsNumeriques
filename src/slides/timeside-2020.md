@@ -430,10 +430,10 @@ class: ircam, tight
 
 ### Server design
 - Based on Django REST Framework (DRF)
-- Interoperability between other servers or frontends and TimeSide instance and its data
-- Object-relational database in order to store music tracks and processing results
-- Models: essential fields and behaviors of stored data
-- queue-worker architecture enables to run tasks asynchronously
+- **Interoperability** between other servers or frontends and TimeSide instance and its data
+- Object-relational **database** in order to store music tracks and processing results
+- **Models**: define essential fields and behaviors of stored data
+- **queue-worker architecture** enables to run tasks asynchronously
 
 ]
 
