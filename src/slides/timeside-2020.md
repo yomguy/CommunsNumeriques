@@ -17,7 +17,7 @@ class: ircam
 
 - Intro (GP 2mn)
 - History (GP 5mn)
-- Framework (GP 10mn)
+- Core (GP 10mn)
 - Server (AG 10mn)
 - Player v2 (MD 10mn)
 - Perspectives (GP 3mn)
@@ -185,7 +185,7 @@ class: ircam
 ---
 class: center, middle, ircam, inverse
 
-# TimeSide framework
+# TimeSide core
 
 
 ---
@@ -228,6 +228,7 @@ https://github.com/Parisson/TimeSide
 - Collaborative annotation
 - Audio web services
 
+##License AGPL v2
 
 ---
 class: ircam
@@ -319,6 +320,7 @@ class: ircam
 - processing API
 - plugin architecture
 - namespace
+- docker packaged
 ]
 
 .pull-right-70[
@@ -340,42 +342,14 @@ grapher.render(output='spectrogram.png')
 print('Level:', analyzer.results)
 Level: {'level.max': AnalyzerResult(...), 'level.rms': AnalyzerResult(...)}
 ```
-]
 
-
-
-
----
-class: ircam
-
-# timeside.core
-
-.pull-left-30[
-
-##Architecture
-
-- streaming oriented core engine
-- data persistence
-- processing API and namespace
-- docker packaged
-- fully scalable
-]
-
-.pull-right-70[
 ```bash
 $ git clone --recursive https://github.com/Parisson/TimeSide.git
 $ docker-compose up
 ```
 
-```python
-$ docker-compose run app python manage.py shell
->>> from timeside.models import Task
->>> tasks = Task.objects.all()
->>> for task in tasks:
->>>     task.run()
-```
-]
 
+]
 
 
 ---
@@ -436,7 +410,7 @@ class: ircam, tight
 * Add core, server and workers logging
 
 ---
-class: ircam, middle, center
+class: ircam, middle, center, inverse
 
 #TimeSide server
 
@@ -665,26 +639,20 @@ class: ircam
 ---
 class: ircam
 
-# Current limitations
-
--	Processing tasks are limited to one machine
-	- Deployment on k8s cluster
-- Clients need to poll server to get update of task status
-	- Implementing Websocket, ServerEvent, Webhook
-
----
-class: ircam
-
 #Perspectives
 
 ## Audio processing SaaS
 
-- Fully open source audio analyzing Web service
+###TODO
 - Clustering and orchestration (Kubernetes)
-- Dual licencing:
+- Implementing Websocket, ServerEvent or Webhook to avoid task status polling
+
+
+###Dual licencing:
     - open source community release of the core framework (AGPL)
     - proprietary (entreprise) release (SATT Lutech / Parisson / IRCAM) ?
-- Industrial use cases:
+
+###Industrial use cases:
     - MIRchiving (Telemeta, BNF, UNAM, UNESCO)
     - Metadata enhanced streaming services (Spotify, Deezer, SoundCloud, Netflix)
     - Digitization and media packaging services (VectraCom, VDM, Gecko)
