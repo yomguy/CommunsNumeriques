@@ -442,21 +442,101 @@ class: ircam, middle, center
 
 
 ---
-class: ircam
-#TimeSide
+class: center, middle, ircam
+#TimeSide server
 
-.pull-left-30[
-##Resful API
 
-http://timeside-dev.telemeta.org/timeside/api/
+---
+class: ircam, tight
+# TimeSide server
 
-- based on Django Rest Framework (extensible)
-- streaming oriented (audio and data)
-- user presets
+.pull-left[
+## RESTful API built on TimeSide
+https://sandbox.wasabi.telemeta.org/timeside/api/
+
+- Based on Django REST Framework
+- Interoperability: allows other servers or frontends to interact with the TimeSide instance and its data
+- Relational PostgreSQL database in order to store music tracks and processing results
+- JWT authentication
+- OpenAPI specification
+- SDK built on the API available in TypeScript
+- Models: essential fields and behaviors of stored data
+- queue-worker architecture enables to run tasks asynchronously
+
 ]
 
-.pull-right-70[
-.right[![image-wh-bg](img/TS2_API.png)]
+.pull-right[
+<img src="img/server_api.png" width="520">
+]
+
+---
+class: ircam, tight
+#TimeSide server
+
+.pull-left[
+## RESTful API built on TimeSide
+https://sandbox.wasabi.telemeta.org/timeside/api/
+
+## Use cases
+- Upload audio tracks
+- Retrieve audio tracks from remote providers
+- Stream original or transcoded sources
+- Run on-demand analysis
+- Customize processors parameters
+- Collect track's annotation to build audio corpora
+- Deliver and share several types of results:
+    - transcoded audio
+    - serialized analysis as JSON or image
+- Export/import an audio analysis dataset
+]
+
+.pull-right[
+<img src="img/server_api.png" width="520">
+]
+
+---
+class: ircam, tight
+# TimeSide server
+
+.pull-left[
+## RESTful API built on TimeSide
+https://sandbox.wasabi.telemeta.org/timeside/api/
+
+## Models
+
+- Item: audio content and metadata (external id)
+- Provider: provide audio from a given plateform
+- Selection: list of items (corpus)
+- Processor: plugins with version and default parameters
+- Preset: processor and a set of parameters
+- Experience: list of presets forming a pipe
+- Task: an experience and a selection
+- Result: transcoded audio or numerical outputs (hdf5 file)
+- Annotation: label audio file on a given time or segment
+
+]
+
+.pull-right[
+<img src="img/server_api.png" width="520">
+]
+
+---
+class: ircam
+#TimeSide server
+
+.pull-left[
+##Example of TimeSide use in WASABI Project
+
+- POC of a webservice delivering audio analysis 
+- Link with another server: a large database of musical metadata
+- 
+
+]
+
+
+.pull-right[
+<img src="img/architecture_WASABI.png" width="450">
+<!-- .right[![image-wh-bg](img/architecture_WASABI.png)] -->
 ]
 
 
@@ -467,6 +547,16 @@ class: ircam, middle, center
 
 
 ---
+class: ircam
+#TimeSide server
+
+## RESTful API documentation
+https://sandbox.wasabi.telemeta.org/timeside/api/docs/
+
+<img src="img/server_doc.png" width="900">
+
+---
+
 class: ircam
 #TimeSide
 
