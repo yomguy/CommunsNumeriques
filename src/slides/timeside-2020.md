@@ -8,9 +8,8 @@ class: center, middle, ircam, inverse
 
 ###POW (Web Team), Innovation and Reasearch Mean Dpt, IRCAM
 
-<img src="img/wasabi_logo_darkbg.png" height="75px" />
+<img src="img/wasabi_logo_darkbg.png" height="50px" />
 
-#### Séminaire STMS - 14/10/2020 - IRCAM
 
 <img src="https://www.ircam.fr/media/uploads/images/logo/logoircam_blanc.png" height="50px" />
 <img src="img/POW_MB.png" height="50px" />
@@ -19,6 +18,7 @@ class: center, middle, ircam, inverse
 <img src="https://anr.fr/fileadmin/_processed_/c/2/csm_ANR-blanc-sur-bleu_15fd9a5fb8.png" height="50px" />
 <img src="https://www.culture.gouv.fr/var/culture/storage/images/_aliases/reference/7/3/0/4/3164037-1-fre-FR/LogoMCHP.PNG" height="50px" />
 
+#### Séminaire STMS - 14/10/2020 - IRCAM
 
 ---
 class: ircam, large-list
@@ -741,12 +741,18 @@ class: ircam, tight
 
 ## Audio processing web service (SaaS)
 
+.pull-left[
 ###TODO
 
-- Clustering and orchestration (Kubernetes)
+- Clustering and orchestration (Kubernetes, prototype ready)
 - Implementing Websocket, ServerEvent or Webhook to avoid task status polling
 - Split repositories : core / server / player
+- Test some JS MIR librairies
 - More documentation, notebooks and tests
+
+]
+
+.pull-right[
 
 ###Use cases
 
@@ -758,14 +764,14 @@ class: ircam, tight
 
 - open source community release of the core framework (AGPL)
 - proprietary (entreprise) release (SATT Lutech / Parisson / IRCAM Amplify)
-
+]
 
 ---
 class: center, middle, ircam, inverse
 
 # Thank you and kudos to all contributors!
 
-<img src="img/wasabi_logo_darkbg.png" height="75px" />
+<img src="img/wasabi_logo_darkbg.png" height="50px" />
 
 http://wasabihome.i3s.unice.fr/
 
