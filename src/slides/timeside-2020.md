@@ -10,13 +10,15 @@ class: center, middle, ircam, inverse
 
 <img src="img/wasabi_logo_darkbg.png" height="50px" />
 
-
 <img src="https://www.ircam.fr/media/uploads/images/logo/logoircam_blanc.png" height="50px" />
 <img src="img/POW_MB.png" height="50px" />
+<img src="https://github.com/Parisson/Telemeta-doc/blob/master/Common/img/parisson_logo_4_black_72_600px.png?raw=true" height="50px" />
+<img src="img/telemeta_logo_wh.png" height="50px" />
 <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/8/8e/Centre_national_de_la_recherche_scientifique.svg/1200px-Centre_national_de_la_recherche_scientifique.svg.png" height="50px" />
 <img src="https://www.sorbonne-universite.fr/sites/default/files/media/2019-10/logo_4.svg" height="50px" />
 <img src="https://anr.fr/fileadmin/_processed_/c/2/csm_ANR-blanc-sur-bleu_15fd9a5fb8.png" height="50px" />
 <img src="https://www.culture.gouv.fr/var/culture/storage/images/_aliases/reference/7/3/0/4/3164037-1-fre-FR/LogoMCHP.PNG" height="50px" />
+
 
 #### Séminaire STMS - 14/10/2020 - IRCAM
 
@@ -747,7 +749,9 @@ class: ircam, tight
 
 - Clustering and orchestration (Kubernetes, prototype ready)
 - Implementing Websocket, ServerEvent or Webhook to avoid task status polling
-- Split repositories : core / server / player
+- Parameters
+- Scales
+- Split repositories : core / server
 - Test some JS MIR librairies
 - More documentation, notebooks and tests
 
@@ -781,8 +785,9 @@ http://wasabihome.i3s.unice.fr/
 
 <img src="https://www.ircam.fr/media/uploads/images/logo/logoircam_blanc.png" height="50px" />
 <img src="img/POW_MB.png" height="50px" />
+<img src="https://github.com/Parisson/Telemeta-doc/blob/master/Common/img/parisson_logo_4_black_72_600px.png?raw=true" height="50px" />
+<img src="img/telemeta_logo_wh.png" height="50px" />
 <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/8/8e/Centre_national_de_la_recherche_scientifique.svg/1200px-Centre_national_de_la_recherche_scientifique.svg.png" height="50px" />
 <img src="https://www.sorbonne-universite.fr/sites/default/files/media/2019-10/logo_4.svg" height="50px" />
 <img src="https://anr.fr/fileadmin/_processed_/c/2/csm_ANR-blanc-sur-bleu_15fd9a5fb8.png" height="50px" />
 <img src="https://www.culture.gouv.fr/var/culture/storage/images/_aliases/reference/7/3/0/4/3164037-1-fre-FR/LogoMCHP.PNG" height="50px" />
-
