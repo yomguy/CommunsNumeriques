@@ -4,12 +4,21 @@ class: center, middle, ircam, inverse
 
 ##Python audio processing framework and server made for the web
 
-###Guillaume Pellerin, Antoine Grandry, Martin Desrumaux - POW (Web Team), IRCAM
+###Guillaume Pellerin, Antoine Grandry, Martin Desrumaux
 
+###POW (Web Team), Innovation and Reasearch Mean Dpt, IRCAM
+
+<img src="img/wasabi_logo_darkbg.png" height="75px" />
 
 #### Séminaire STMS - 14/10/2020 - IRCAM
 
-<img src="img/POW_MB.png" height="100px" />
+<img src="https://www.ircam.fr/media/uploads/images/logo/logoircam_blanc.png" height="50px" />
+<img src="img/POW_MB.png" height="50px" />
+<img src="https://upload.wikimedia.org/wikipedia/fr/thumb/8/8e/Centre_national_de_la_recherche_scientifique.svg/1200px-Centre_national_de_la_recherche_scientifique.svg.png" height="50px" />
+<img src="https://www.sorbonne-universite.fr/sites/default/files/media/2019-10/logo_4.svg" height="50px" />
+<img src="https://anr.fr/fileadmin/_processed_/c/2/csm_ANR-blanc-sur-bleu_15fd9a5fb8.png" height="50px" />
+<img src="https://www.culture.gouv.fr/var/culture/storage/images/_aliases/reference/7/3/0/4/3164037-1-fre-FR/LogoMCHP.PNG" height="50px" />
+
 
 ---
 class: ircam, large-list
@@ -761,4 +770,12 @@ class: center, middle, ircam, inverse
 http://wasabihome.i3s.unice.fr/
 
 ###guillaume.pellerin@ircam.fr / @yomguy
+
+
+<img src="https://www.ircam.fr/media/uploads/images/logo/logoircam_blanc.png" height="50px" />
+<img src="img/POW_MB.png" height="50px" />
+<img src="https://upload.wikimedia.org/wikipedia/fr/thumb/8/8e/Centre_national_de_la_recherche_scientifique.svg/1200px-Centre_national_de_la_recherche_scientifique.svg.png" height="50px" />
+<img src="https://www.sorbonne-universite.fr/sites/default/files/media/2019-10/logo_4.svg" height="50px" />
+<img src="https://anr.fr/fileadmin/_processed_/c/2/csm_ANR-blanc-sur-bleu_15fd9a5fb8.png" height="50px" />
+<img src="https://www.culture.gouv.fr/var/culture/storage/images/_aliases/reference/7/3/0/4/3164037-1-fre-FR/LogoMCHP.PNG" height="50px" />
 
