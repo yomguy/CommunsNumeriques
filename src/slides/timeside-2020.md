@@ -44,9 +44,9 @@ class: ircam, tight
 
 - digization > big data > platforms > machine learning > users & listeners
 - more data sets, databases, formats, algorithm versions, open DSP libraries & communities
-- collaborative workflows, citizen sciences through the web
+- difficulties to port and scale some algorithms on production platforms (DSP at scale)
 - computer science need human data, digital humanities needs computers
-- difficult to port and scale some algorithms on production platforms (DSP at scale)
+- collaborative workflows, citizen sciences through the web
 
 ## Constraints
 
