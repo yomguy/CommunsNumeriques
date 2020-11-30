@@ -6,7 +6,7 @@ module.exports = {
     slides: './src/slides/*.md',
     js: './src/js/**/*.js',
     styl: './src/styl/**/*.styl',
-    img: './src/img/**/*',
+    img: './src/slides/img/**/*',
     files: {
       jade: './src/templates/index.jade',
       styl: './src/styl/main.styl'
